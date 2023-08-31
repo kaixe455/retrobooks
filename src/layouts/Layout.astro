@@ -27,13 +27,15 @@ const { title } = Astro.props;
 		--accent-dark: 49, 10, 101;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
 	}
+	@font-face {
+		font-family: 'KronaOne';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url('/fonts/KronaOne-Regular.woff2') format('woff2');
+	}
 	html {
-		font-family: system-ui, sans-serif;
 		background: #13151A;
 		background-size: 224px;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>
