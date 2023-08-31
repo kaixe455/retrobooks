@@ -5,14 +5,15 @@ module.exports = {
 		extend: {
 			colors: {
 				retro: {
-					DEFAULT: '#7541e4'
+					DEFAULT: '#7541e4',
+					black: 'rgba(0,0,0,0.2)'
 				}
 			},
 			fontFamily: {
 				krona: ['KronaOne', 'system-ui', 'sans-serif']
 			},
 			backgroundImage: {
-				'retro-bg': 'linear-gradient(90deg, #0F262B 100%, 62.9447%, #090C25 100%)'
+				'retro-bg': 'linear-gradient(90deg, #0F262B 0%, 62.9447%, #090C25 100%)'
 			}
 		}
 	},
