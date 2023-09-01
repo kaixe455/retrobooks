@@ -1,0 +1,32 @@
+---
+const { border, rounded, color, text } = Astro.props;
+const borderColor = `border-${color}`;
+---
+{ border && color && !rounded && (<button
+	class=`bg-transparent hover:opacity-70 text-white hover:text-white py-2 px-4 border ${borderColor}`
+  >
+	{text}
+  </button>)}
+  {border && rounded && color && (<button
+	class=`bg-transparent hover:opacity-70 text-white hover:text-white text-xs py-2 px-16 border ${borderColor} rounded-full`
+  >
+	{text}
+  </button>)}
+
+{border && rounded && !color && (<button
+	class=`bg-transparent hover:opacity-70 text-white hover:text-white py-2 px-8 border white rounded-full`
+  >
+	{text}
+  </button>)}
+
+{!border && !rounded && !color && (<button
+	class=`bg-transparent hover:opacity-70 text-white hover:text-white py-2 px-4`
+  >
+	{text}
+  </button>)}
+
+{border && !rounded && !color && (<button
+	class="bg-transparent hover:opacity-70 text-white hover:text-white py-2 px-8 border white"
+  >
+	{text}
+  </button>)}
