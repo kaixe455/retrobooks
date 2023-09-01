@@ -6,7 +6,9 @@ module.exports = {
 			colors: {
 				retro: {
 					DEFAULT: '#7541e4',
-					black: 'rgba(0,0,0,0.2)'
+					black: 'rgba(0,0,0,0.2)',
+					green: '#BFFF0A',
+					yellow: '#FFBA0A'
 				}
 			},
 			fontFamily: {
@@ -18,7 +20,11 @@ module.exports = {
 		}
 	},
 	safelist: [
-		'retro-bg'
+		'retro-bg',
+		'border-retro-yellow',
+		'border-retro-green',
+		'bg-retro-yellow',
+		'bg-retro-green'
 	],
 	plugins: [],
 }
