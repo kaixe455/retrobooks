@@ -1,8 +1,63 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Card from '../components/Card.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+	<main>
+		<Container>
+			<div class="grid grid-cols-2 gap-4 text-white">
+				<div class="p-10 text-white">
+					<div class="grid grid-cols-4 gap-4 text-white">
+						<div class="col-span-3">
+							<h2 class="text-5xl">RetroBooks By RetroKode</h2>
+						</div>
+						<div class="col-span-1">
+							<div class="grid grid-cols-2 my-4">
+								<img
+								class="w-10 lg:w-10 xl:w-10"
+								src="./svgs/book.svg"
+								alt={`Escudo del equipo`}
+								/>
+								<img
+								class="w-10 lg:w-10 xl:w-10"
+								src="./svgs/book.svg"
+								alt={`Escudo del equipo`}
+								/>
+							</div>
+							<div class="grid grid-cols-2 my-4">
+								<img
+								class="w-10 lg:w-10 xl:w-10"
+								src="./svgs/book.svg"
+								alt={`Escudo del equipo`}
+								/>
+								<img
+								class="w-10 lg:w-10 xl:w-10"
+								src="./svgs/book.svg"
+								alt={`Escudo del equipo`}
+								/>
+							</div>
+						</div>
+					</div>
+					<p class="my-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et enim aliquam, gravida velit in, tristique augue. Etiam maximus nulla sed quam egestas, ac dignissim dui ornare. Mauris suscipit et lorem eget volutpat. Aliquam tincidunt nisl ante, at tincidunt nulla elementum in. Aliquam at nunc pretium, tristique justo id, semper risus. Cras viverra efficitur enim ut ornare.</p>
+					<p class="my-10">Curabitur a odio ornare, hendrerit arcu non, convallis nulla. Praesent convallis, nibh et dapibus interdum, est nunc ornare ipsum, eget convallis metus ante id ipsum. Praesent at purus id tellus aliquam gravida ac ac dolor. Sed malesuada turpis nec mauris commodo auctor. Etiam fringilla mauris id est bibendum faucibus. Quisque eget lectus mi. Cras eget dolor mollis, sodales ante vitae, elementum neque.</p>
+					<div class="grid grid-cols-2 gap-2">
+						<div class="col-span-1 m-auto"><Button text="DOWNLOAD" rounded="true" border="true" color="retro-green" /></div>
+						<div class="col-span-1"><Button text="UPGRADE YOUR VERSION" rounded="true" border="true" color="retro-yellow" /></div>
+					</div>
+				</div>
+				<div class="p-10">
+					<span class="my-5">The commitment to revive the love of reading.</span>
+					<img
+                  class="w-45 lg:w-45 xl:w-45 mx-2"
+                  src="./svgs/book.svg"
+                  alt={`Escudo del equipo`}
+                />
+				<span>Reading can always be pleasurable if you choose to do it in the best way!</span>
+				</div>
+			  </div>
+		</Container>
+	</main>
 </Layout>
