@@ -1,9 +1,10 @@
 ---
 import Logo from "./Logo.astro";
+import Button from "./Button.astro";
 ---
 
 <header
-  class="flex item-center m-auto w-full bg-retro-black py-3 px-4 gap-x-8 h-20"
+  class="flex item-center m-auto w-full bg-retro-black py-6 px-4 gap-x-8 h-28"
 >
   <div class="flex md:flex-col h-full md:gap-4 w-full justify-between">
     <nav>
@@ -14,8 +15,27 @@ import Logo from "./Logo.astro";
         <div class="md:rounded-full md:m-auto">
           <ul class="flex items-end justify-end w-full">
             <li class="mx-2">
+              <a class="group transition" href="/" title="{name}">
+                <Button text="SUPPORT" /></a
+              >
+            </li>
+            <li class="mx-2">
               <a class="group transition text-white" href="/" title="{name}">
-                Enlace</a
+                <Button text="DOWNLOAD" rounded="true" border="true" /></a
+              >
+            </li>
+            <li class="mx-2">
+              <a class="group transition text-white" href="/" title="{name}">
+                <Button text="BUY PREMIUM" border="true" /></a
+              >
+            </li>
+            <li class="mx-2">
+              <a class="group transition text-white" href="/" title="{name}">
+                <img
+                  class="w-10 h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10 mx-2"
+                  src="./svgs/sheet.svg"
+                  alt={`Escudo del equipo`}
+                /></a
               >
             </li>
           </ul>
