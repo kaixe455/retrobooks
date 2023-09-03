@@ -1,0 +1,14 @@
+---
+const { icon, text } = Astro.props;
+---
+
+<div
+  class="p-[1px] rounded-full bg-gradient-to-r from-[#82FF9D] to-[#87FFF1] m-6"
+>
+  <button
+    class="bg-black hover:opacity-70 text-white hover:text-white text-xs py-2 px-16 border rounded-full inline-flex items-center justify-center w-72"
+  >
+    <img class="max-h-6" src=`./svgs/${icon}.svg` alt={text} />
+    <span class="align-middle m-2">{text}</span>
+  </button>
+</div>
