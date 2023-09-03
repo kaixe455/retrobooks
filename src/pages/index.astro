@@ -59,12 +59,18 @@ import Button from "@components/Button.astro";
           </p>
           <div class="grid grid-cols-2 gap-2">
             <div class="col-span-1 m-auto">
-              <Button
-                text="DOWNLOAD"
-                rounded="true"
-                border="true"
-                color="retro-green"
-              />
+              <a
+                class="group transition text-white"
+                href="/download"
+                title="{name}"
+              >
+                <Button
+                  text="DOWNLOAD"
+                  rounded="true"
+                  border="true"
+                  color="retro-green"
+                />
+              </a>
             </div>
             <div class="col-span-1">
               <Button
@@ -82,7 +88,7 @@ import Button from "@components/Button.astro";
           <img
             class="w-45 lg:w-45 xl:w-45 mx-2"
             src="./svgs/book.svg"
-            alt={`Escudo del equipo`}
+            alt={`Book`}
           />
           <span
             >Reading can always be pleasurable if you choose to do it in the
