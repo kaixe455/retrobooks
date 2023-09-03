@@ -8,7 +8,8 @@ module.exports = {
 					DEFAULT: '#7541e4',
 					black: 'rgba(0,0,0,0.2)',
 					green: '#BFFF0A',
-					yellow: '#FFBA0A'
+					yellow: '#FFBA0A',
+					discord: 'rgba(19, 48, 123, 0.21)'
 				}
 			},
 			fontFamily: {
