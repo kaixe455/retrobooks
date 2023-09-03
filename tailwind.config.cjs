@@ -15,7 +15,7 @@ module.exports = {
 				krona: ['KronaOne', 'system-ui', 'sans-serif']
 			},
 			backgroundImage: {
-				'retro-bg': 'linear-gradient(90deg, #0F262B 0%, 62.9447%, #090C25 100%)'
+				'retro-bg': 'linear-gradient(90deg, #2D0D38 0%, 62.9447%, #090C25 100%)'
 			}
 		}
 	},
