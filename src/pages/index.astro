@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import Button from "@components/Button.astro";
+import MenuButton from "@components/MenuButton.astro";
 ---
 
 <Layout title="RetroBooks">
@@ -64,7 +64,7 @@ import Button from "@components/Button.astro";
                 href="/download"
                 title="{name}"
               >
-                <Button
+                <MenuButton
                   text="DOWNLOAD"
                   rounded="true"
                   border="true"
@@ -74,7 +74,7 @@ import Button from "@components/Button.astro";
             </div>
             <div class="col-span-1">
               <a href="/premium">
-                <Button
+                <MenuButton
                   text="UPGRADE YOUR VERSION"
                   rounded="true"
                   border="true"
