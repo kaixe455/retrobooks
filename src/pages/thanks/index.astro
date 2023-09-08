@@ -1,0 +1,26 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import SheetsBackground from "@components/SheetsBackground.astro";
+import DiscordButton from "@components/DiscordButton.astro";
+---
+
+<Layout title="Thanks for downloading">
+  <main class="text-white">
+    <Container>
+      <div class="grid grid-cols-1 p-10 min-h-screen">
+        <div class="flex flex-col items-center justify-center col-span-1">
+          <h1 class="text-5xl text-white mb-10">
+            THANKS FOR DOWNLOADING RETROBOOKS!
+          </h1>
+          <p class="text-white xl:px-96 my-14">
+            Join our community and share with us your experiences with
+            RetroBooks.
+          </p>
+          <DiscordButton text="DISCORD COMMUNITY" />
+        </div>
+      </div>
+      <SheetsBackground />
+    </Container>
+  </main>
+</Layout>
