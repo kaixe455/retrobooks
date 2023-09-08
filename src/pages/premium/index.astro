@@ -1,0 +1,80 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import SheetsBackground from "@components/SheetsBackground.astro";
+import DiscordButton from "@components/DiscordButton.astro";
+import PrincingCard from "@components/PrincingCard.astro";
+const freeBenefits = [
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+];
+const membershipBenefits = [
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+];
+const superThanksBenefits = [
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+  "- Curabitur a odio ornare, hendrerit arcu non.",
+];
+---
+
+<Layout title="Support - RetroBooks">
+  <main class="text-white">
+    <Container>
+      <div class="grid grid-cols-1 p-10 min-h-screen">
+        <div class="flex flex-col items-center justify-center col-span-1">
+          <h1 class="text-5xl text-white mb-10">Support RetroBooks</h1>
+          <p class="text-white xl:px-96 my-14">
+            Our RetroBooks support system is focused on Discord! We invite you
+            to join and open a ticket in case of questions or problems with the
+            product.
+          </p>
+          <div class="grid grid-cols-3 gap-52">
+            <div class="col-span-1">
+              <PrincingCard
+                price="$0"
+                title="FREE"
+                frequently="Ever"
+                benefits={freeBenefits}
+              />
+            </div>
+            <div class="col-span-1">
+              <PrincingCard
+                price="$3.75"
+                title="RetroBooks Membership"
+                frequently="Monthly"
+                more_info="¡Less than a coffee!"
+                benefits={membershipBenefits}
+              />
+            </div>
+            <div class="col-span-1">
+              <PrincingCard
+                price="99$"
+                title="FREE"
+                frequently="Ever!"
+                more_info="One payment, enjoyment for life."
+                benefits={superThanksBenefits}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <SheetsBackground />
+    </Container>
+  </main>
+</Layout>
