@@ -6,7 +6,7 @@ import Container from "@components/Container.astro";
   class="page-footer text-white w-full p-8 bg-retro-black overflow-hidden [&>div]:relative [&>div]:z-10 mb-0"
 >
   <Container>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 md:grid-cols-2">
       <div class="col-span-1 p-10">
         <a href="/">
           <h2 class="text-3xl">RetroBooks</h2>
@@ -15,7 +15,7 @@ import Container from "@components/Container.astro";
       </div>
       <div class="col-span-1">
         <nav
-          class="flex flex-col lg:flex-col gap-12 md:gap-4 justify-between w-full align-middle items-end"
+          class="flex flex-col lg:flex-col gap-12 md:gap-4 md:justify-between justify-center w-full align-middle md:items-end items-center"
         >
           <a class="text-sm opacity-50 hover:opacity-100" href="#">Utility</a>
           <a class="text-sm opacity-50 hover:opacity-100" href="/download"

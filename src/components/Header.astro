@@ -4,22 +4,24 @@ import MenuButton from "@components/MenuButton.astro";
 ---
 
 <header
-  class="flex item-center m-auto w-full bg-retro-black py-6 px-4 gap-x-8 h-28"
+  class="item-center m-auto w-full bg-retro-black py-6 px-4 gap-x-8 md:h-28"
 >
-  <div class="flex md:flex-col h-full md:gap-4 w-full justify-between">
+  <div class="md:flex-col h-full md:gap-4 w-full justify-between">
     <nav>
       <div class="mx-16">
         <Logo />
       </div>
       <div>
         <div class="md:rounded-full md:m-auto">
-          <ul class="flex items-end justify-end w-full">
-            <li class="mx-2">
+          <ul
+            class="flex md:items-end md:justify-end flex-col md:flex-row justify-center items-center w-full"
+          >
+            <li class="mx-2 mb-10 mt-3 md:mt-0 md:mb-0">
               <a class="group transition" href="/support" title="{name}">
                 <MenuButton text="SUPPORT" /></a
               >
             </li>
-            <li class="mx-2">
+            <li class="mx-2 mb-10 md:mb-0">
               <a
                 class="group transition text-white"
                 href="/download"
@@ -28,7 +30,7 @@ import MenuButton from "@components/MenuButton.astro";
                 <MenuButton text="DOWNLOAD" rounded="true" border="true" /></a
               >
             </li>
-            <li class="mx-2">
+            <li class="mx-2 mb-10 md:mb-0">
               <a
                 class="group transition text-white"
                 href="/premium"
@@ -37,7 +39,7 @@ import MenuButton from "@components/MenuButton.astro";
                 <MenuButton text="BUY PREMIUM" border="true" /></a
               >
             </li>
-            <li class="mx-2">
+            <li class="mx-2 mb-10 md:mb-0 hidden md:block">
               <a class="group transition text-white" href="/" title="{name}">
                 <img
                   class="w-10 h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10 mx-2"
