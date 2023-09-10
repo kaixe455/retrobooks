@@ -5,8 +5,10 @@ const { price, frequently, title, more_info, benefits } = Astro.props;
 <div
   class="max-w-md py-4 px-8 bg-transparent shadow-lg rounded-lg border-2 border-white my-20"
 >
-  <div class="flex justify-center md:justify-end -mt-10 -mr-16">
-    <div class="border-2 boder-white rounded-full p-4 bg-retro-bg -rotate-45">
+  <div class="flex justify-center md:justify-end md:-mt-10 md:-mr-16">
+    <div
+      class="border-2 boder-white rounded-full p-4 bg-retro-bg md:-rotate-45"
+    >
       <span>{price}</span>
     </div>
   </div>
@@ -18,8 +20,8 @@ const { price, frequently, title, more_info, benefits } = Astro.props;
     </h2>
     {
       more_info && (
-        <div class="flex justify-center md:justify-end -mt-6 ml-44 -mr-40 text-[#F9FFB4]">
-          <div class="border-2 boder-white rounded-[20px] p-4 bg-retro-bg -rotate-45 text-[10px]">
+        <div class="flex justify-center md:justify-end md:-mt-6 md:ml-44 md:-mr-40 text-[#F9FFB4]">
+          <div class="border-2 boder-white rounded-[20px] p-4 bg-retro-bg md:-rotate-45 text-[10px]">
             <span>{more_info}</span>
           </div>
         </div>
