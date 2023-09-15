@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import SheetsBackground from "@components/SheetsBackground.astro";
+import LoginDiscord from "@components/LoginDiscord.jsx";
+---
+
+<Layout title="Login - Discord">
+  <main class="text-white">
+    <Container>
+      <div class="grid grid-cols-1 p-10 min-h-screen">
+        <LoginDiscord client:only="react" />
+      </div>
+      <SheetsBackground />
+    </Container>
+  </main>
+</Layout>
