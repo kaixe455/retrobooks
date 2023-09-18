@@ -2,7 +2,21 @@
 
 > 🧑‍🚀 **RetroBooks** Preview this project!
 
-![Imagen resultado de la web](https://github.com/kaixe455/retrobooks/blob/develop/preview.png?raw=true)
+### Home preview
+
+![Home preview](https://github.com/kaixe455/retrobooks/blob/main/preview.png?raw=true)
+
+### Support page preview
+
+![Preview de los equipos](https://github.com/kaixe455/retrobooks/blob/main/support.png?raw=true)
+
+### Download page preview
+
+![Preview del calendario](https://github.com/kaixe455/retrobooks/blob/main/download.png?raw=true)
+
+### Premium page preview
+
+![Preview página de equipo](https://github.com/kaixe455/retrobooks/blob/main/premium.png?raw=true)
 
 ## 🚀 Project Structure
 
