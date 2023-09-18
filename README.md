@@ -4,7 +4,7 @@
 
 ### Home preview
 
-![Home preview](https://github.com/kaixe455/retrobooks/blob/main/preview.png?raw=true)
+![Home preview](https://github.com/kaixe455/retrobooks/blob/main/preview_home.png?raw=true)
 
 ### Support page preview
 
